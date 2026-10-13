@@ -1,0 +1,40 @@
+name: Cerca stanze
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"   # ogni 15 minuti
+  workflow_dispatch:          # permette di avviarlo a mano
+
+permissions:
+  contents: write             # serve per salvare seen.json
+
+concurrency:
+  group: cerca-stanze
+  cancel-in-progress: false
+
+jobs:
+  cerca:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Installa librerie
+        run: pip install requests beautifulsoup4
+
+      - name: Cerca nuovi annunci
+        run: python bot.py
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+
+      - name: Salva gli annunci già visti
+        run: |
+          git config user.name "bot-stanze"
+          git config user.email "bot-stanze@users.noreply.github.com"
+          git add seen.json
+          git diff --staged --quiet || (git commit -m "aggiorna annunci visti" && git push)
