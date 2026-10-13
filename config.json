@@ -1,0 +1,17 @@
+{
+  "ricerche": [
+    {
+      "nome": "Idealista",
+      "url": "https://www.idealista.it/affitto-stanze/milano-milano/con-prezzo_700,sesso_ragazzo,pubblicato_ultima-settimana/?ordine=pubblicazione-desc"
+    },
+    {
+      "nome": "Immobiliare.it",
+      "url": "https://www.immobiliare.it/affitto-stanze/milano/?criterio=data&ordine=desc&prezzoMassimo=700&sessoInquilini=E&categoriaStanza=2&tipologiaStanza=1"
+    },
+    {
+      "nome": "Subito",
+      "url": "https://www.subito.it/annunci-lombardia/affitto/camere-posti-letto/milano/milano/?q=stanza+singola&pe=700&rt=1&gndr=3&smk=2"
+    }
+  ],
+  "escludi_parole": ["posto letto", "doppia"]
+}
