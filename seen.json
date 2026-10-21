@@ -1,9 +1,9 @@
 {
  "seen": {},
  "fail": {
-  "https://www.idealista.it/affitto-stanze/milano-milano/con-prezzo_700,sesso_ragazzo,pubblicato_ultima-settimana/?ordine=pubblicazione-desc": 50,
-  "https://www.immobiliare.it/affitto-stanze/milano/?criterio=data&ordine=desc&prezzoMassimo=700&sessoInquilini=E&categoriaStanza=2&tipologiaStanza=1": 50,
-  "https://www.subito.it/annunci-lombardia/affitto/camere-posti-letto/milano/milano/?q=stanza+singola&pe=700&rt=1&gndr=3&smk=2": 50
+  "https://www.idealista.it/affitto-stanze/milano-milano/con-prezzo_700,sesso_ragazzo,pubblicato_ultima-settimana/?ordine=pubblicazione-desc": 51,
+  "https://www.immobiliare.it/affitto-stanze/milano/?criterio=data&ordine=desc&prezzoMassimo=700&sessoInquilini=E&categoriaStanza=2&tipologiaStanza=1": 51,
+  "https://www.subito.it/annunci-lombardia/affitto/camere-posti-letto/milano/milano/?q=stanza+singola&pe=700&rt=1&gndr=3&smk=2": 51
  },
  "init": []
 }
